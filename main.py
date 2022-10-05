@@ -60,7 +60,6 @@ with st.container():
                 id = my_dict[0]['id']
                 category = my_dict[0]['category']
                 excuse = my_dict[0]['excuse']
-                #st.write('Category: '+category.capitalize())
                 st.write(excuse)
 
             except HTTPError as http_err:
@@ -82,8 +81,7 @@ with st.container():
             try:
                 st.write("")
                 st.write("")
-                #with right_column:
-                    #st_lottie(lottie_return_2,height=600,key = "pencil",quality="High")
+                
                 cat_select_lower = cat_selection[0].lower() + cat_selection[1:]
         
                 r = requests.get('https://excuser.herokuapp.com/v1/excuse/'+cat_select_lower+'/'+str(num_selection))
