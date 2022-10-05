@@ -14,7 +14,7 @@ from requests.exceptions import HTTPError
 
 API_URL = 'https://excuser.herokuapp.com/v1/'
 LOTTIE_URL_1 = 'https://assets10.lottiefiles.com/packages/lf20_5eil5ze3.json'
-LOTTIE_URL_2 = 'https://assets10.lottiefiles.com/private_files/lf30_rlssnwpv.json'
+
 
 
 #---stream_lit_config---
@@ -30,7 +30,7 @@ def load_lottie_image(LOTTIE_URL):
     return r.json()
 
 lottie_return_1 = load_lottie_image(LOTTIE_URL_1)
-lottie_return_2 = load_lottie_image(LOTTIE_URL_2)
+
 
 
 #---main_container---
