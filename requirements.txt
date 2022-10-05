@@ -1,1 +1,3 @@
-pip install requests streamlit streamlit_lottie
+pip install requests 
+pip install streamlit 
+pip install streamlit_lottie
